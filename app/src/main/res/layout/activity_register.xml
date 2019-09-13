@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".Activities.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/back_input_arrow"
+            android:src="@drawable/ic_back_arrow_long_holo_dark_pad"
+            android:layout_width="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:text="Indietro"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageView
+            android:id="@+id/toolbarLogo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_dolciaria"
+            android:contentDescription="logo"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Tutti i campi sono obbligatori per creare un account"
+        android:layout_below="@id/toolbar"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_username_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disclaimer"
+        app:errorEnabled="true"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+    <androidx.appcompat.widget.AppCompatEditText
+    android:importantForAutofill="noExcludeDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Inserisci username"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold"
+    android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_email_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_username_input"
+        android:layout_centerInParent="true"
+        app:errorEnabled="true"
+        android:padding="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:importantForAutofill="noExcludeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="La tua e-mail"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_name_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_email_input"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:importantForAutofill="noExcludeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Il tuo nome"
+            app:errorEnabled="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_phone_number_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_below="@id/register_name_input"
+        app:passwordToggleEnabled="true"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:importantForAutofill="noExcludeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero di telefono"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_password_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_below="@id/register_phone_number_input"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:importantForAutofill="noExcludeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="La tua password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:importantForAutofill="noExcludeDescendants"
+        android:id="@+id/repeat_register_password_input"
+        android:layout_width="300dp"
+        app:errorEnabled="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password_input"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ripeti password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeat_register_password_input"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Crea account" />
+
+
+
+
+
+</RelativeLayout>

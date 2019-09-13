@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ConfirmFinalOrderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/back_input_arrow"
+            android:src="@drawable/ic_back_arrow_long_holo_dark_pad"
+            android:layout_width="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:text="Indietro"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/title_cart_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONFERMA ORDINE"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_below="@id/toolbar_confirm_order"
+        android:id="@+id/address_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compila i dati per l'ordine"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipment_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Inserisci il tuo nome"
+        android:layout_below="@id/address_title"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipment_numberphone"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Inserisci il tuo numero di telefono"
+        android:layout_below="@id/shipment_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipment_email"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Inserisci la tua email"
+        android:layout_below="@id/shipment_numberphone"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipment_address"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Inserisci il tuo indirizzo"
+        android:layout_below="@id/shipment_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipment_city"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Inserisci città di spedizione"
+        android:layout_below="@id/shipment_address"/>
+
+<Button
+    android:id="@+id/confirm_order_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Conferma"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimaryDark"
+    android:textColor="@color/colorAccent"
+    android:textSize="15dp"
+    android:layout_marginBottom="25dp"/>
+</RelativeLayout>

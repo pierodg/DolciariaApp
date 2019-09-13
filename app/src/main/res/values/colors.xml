@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D4037</color>
+    <color name="colorPrimaryDark">#3E2723</color>
+    <color name="colorAccent">#FFF</color>
+
+    <color name="backgroundPrimary">#D7CCC8</color>
+    <color name="textTabLayout">#FFFF</color>
+    <color name="markedText">#f43232</color>
+
+    <color name="cardColor1">#6bd663</color>
+    <color name="cardColor2">#fcd56c</color>
+    <color name="cardColor3">#e1225b</color>
+    <color name="cardColor4">#4a96e7</color>
+    <color name="cardColor5">#a04ffc</color>
+    <color name="cardColor6">#4ff1eb</color>
+
+
+</resources>

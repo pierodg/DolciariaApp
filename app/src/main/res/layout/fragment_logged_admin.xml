@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LoggedAdmin">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_register_btn"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_register_btn"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Admin loggato"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:lines="2"
+            android:text="admin ha effettuato il login "
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/addProductActivityButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Aggiungi prodotto"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/viewOrderActivityButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Nuovi ordini"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/addProductActivityButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+       <!-- <TextView
+            android:id="@+id/dialog_product_name"
+            android:text="Product name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_above="@id/dialog_product_description"
+            android:layout_marginTop="90dp"/>
+        <TextView
+            android:id="@+id/dialog_product_description"
+            android:text="Product Description"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/> -->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dialog_product_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/logo_dolciaria"
+     android:layout_centerInParent="true"
+
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/adapter"
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginRegisterBtn">
+
+    <RelativeLayout
+        android:id="@+id/login_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/usernameLogged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Utente loggato"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/cartButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameLogged"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/ic_cart_custom_color_primary"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Carrello"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <Button
+            android:id="@+id/orderListButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_list_custom_color_primary"
+
+            android:backgroundTint="@color/colorAccent"
+            android:text="I tuoi ordini"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderListButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_account_custom_color_primary"
+
+            android:backgroundTint="@color/colorAccent"
+            android:text="   Il tuo account"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settingsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_exit_custom_color_primary"
+
+            android:backgroundTint="@color/colorAccent"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+</LinearLayout>

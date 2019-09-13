@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CartActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/back_input_arrow"
+            android:src="@drawable/ic_back_arrow_long_holo_dark_pad"
+            android:layout_width="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:text="Indietro"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+
+        <TextView
+            android:id="@+id/title_cart_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CARRELLO"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_above="@id/cart_next_button"
+        android:id="@+id/bottom_layout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cart_total_price"
+            android:text="IL CARRELLO È VUOTO"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="Il tuo ordine è stato ricevuto"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message1"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/message3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message2"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_cart"
+       android:layout_above="@id/bottom_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/cart_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prosegui"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".Activities.InfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_info"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/back_input_arrow"
+            android:src="@drawable/ic_back_arrow_long_holo_dark_pad"
+            android:layout_width="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:text="Indietro"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/title_cart_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="INFO"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_info"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-2dp">
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:padding="5dp"
+            android:text="Gli uffici dell'azienda sono di disponibili\ndal lunedì al venerdi dalle ore 8:30 alle 13:00 / dalle ore 14:00 alle 18:00 \nsabato dalle 8:30 alle 13:00"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt_contatti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/disclaimer"
+            android:layout_marginStart="5dp"
+            android:text="Contatti:"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+           <LinearLayout
+                android:gravity="center"
+               android:layout_below="@id/txt_contatti"
+               android:orientation="horizontal"
+               android:id="@+id/tel_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Tel. :"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0924 89248"
+                    android:textSize="20dp" />
+                <ImageButton
+
+                    android:id="@+id/btn_call"
+                    android:src="@drawable/ic_call_holo_dark_pad"
+                    android:layout_width="50dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:text="Indietro"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    />
+           </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@id/tel_layout"
+            android:orientation="horizontal"
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Email :"
+                    android:textSize="18dp" />
+                <TextView
+                 android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="dolciariadigiovanni@libero.it"
+                    android:textSize="16dp" />
+                <ImageButton
+                    android:id="@+id/btn_email"
+                    android:src="@drawable/ic_email_holo_dark_pad"
+                    android:layout_width="50dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:text="Indietro"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_doveSiamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_layout"
+            android:layout_marginStart="5dp"
+            android:text="Dove siamo"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_doveSiamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Castelvetrano (TP) 91022"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Via XX Settembre 72"
+                    android:textSize="17dp" />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/maps"
+        android:id="@+id/mapImage"
+        android:layout_above="@id/btn_help"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        />
+
+<Button
+    android:id="@+id/btn_help"
+    android:background="@color/colorAccent"
+    android:text="Problemi con l'app? Clicca qui"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "545256913852",
+    "firebase_url": "https://biscottificio-c009b.firebaseio.com",
+    "project_id": "biscottificio-c009b",
+    "storage_bucket": "biscottificio-c009b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545256913852:android:088e4bb6507fb829",
+        "android_client_info": {
+          "package_name": "com.example.piero.dolciariaapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545256913852-0un9msofqghqtcolkptj42l0d7oru0tu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.piero.dolciariaapp1",
+            "certificate_hash": "d25fcc4a1c6736e114d24bd6b7381c6d910ff04b"
+          }
+        },
+        {
+          "client_id": "545256913852-cd56tan9eg3gaphokaaq3usre5pl7st1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD00aAv0u-V399gUYFKIYuGriUfC7DGaYE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545256913852-cd56tan9eg3gaphokaaq3usre5pl7st1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

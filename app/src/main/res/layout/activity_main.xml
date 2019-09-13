@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary"
+    tools:context=".Activities.MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginEnd="15dp"
+            android:id="@+id/toolbarLogo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_dolciaria"
+            android:contentDescription="logo"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/image_info"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_info_holo_dark_white_pad"
+            android:layout_alignParentEnd="true"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/tabLayout"
+        app:tabTextColor="@color/textTabLayout"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@id/tabLayout"
+        />
+
+
+
+</RelativeLayout>
