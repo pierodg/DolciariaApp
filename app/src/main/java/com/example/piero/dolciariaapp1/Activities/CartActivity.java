@@ -40,9 +40,7 @@ public class CartActivity extends AppCompatActivity {
     private TextView txtTotalAmount, txtMessage, txtMessage2, txtMessage3;
     private String categoryName;
     private DatabaseReference productsRef;
-
     private double overTotalPrice = 0;
-
 
 
     @Override
