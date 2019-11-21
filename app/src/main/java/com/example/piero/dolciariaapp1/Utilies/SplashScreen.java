@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.example.piero.dolciariaapp1.Activities.MainActivity;
 
 public class SplashScreen extends AppCompatActivity {
-    int timeout = 2000;
+    int timeout = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

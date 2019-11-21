@@ -31,6 +31,10 @@ public class SettingsActivity extends AppCompatActivity {
     private String checker = "";
     private int clickName, clickEmail, clickPhone, clickAddress, clickCity;
 
+    //************************IMPORTANT**********************
+    //ACTIVITY NON FUNZIONA CORRETTAMENTE
+    //AGGIORNA IL DB MA SE I CAMPI SONO VUOI SVUOTA LE INFORMAZIONI ESISTENTI
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +50,7 @@ public class SettingsActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.settings_change_name);
         editTextPhone = findViewById(R.id.settings_change_phone);
         editTextEmail = findViewById(R.id.settings_change_email);
-       // editTextPassword = findViewById(R.id.settings_change_password); da aggiungere in segutio
+       // editTextPassword = findViewById(R.id.settings_change_password); da aggiungere in seguito
         editTextAddress = findViewById(R.id.settings_change_address);
         editTextCity = findViewById(R.id.settings_change_city);
 

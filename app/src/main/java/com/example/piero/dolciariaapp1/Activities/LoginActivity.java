@@ -138,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void allowAccessToAccount(final String username, final String password) {
-      //  final String my_email  = email.replace(".", ","); //FIREBASE NON ACCETTA PUNTI
+      //  final String my_email  = email.replace(".", ","); //FIREBASE NON ACCETTA PUNTI => (?)
         final String passwordToMD5 = hashCodeGenMD5(password);
 
 
@@ -164,10 +164,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (usersData.getPassword().equals(passwordToMD5)) {
 
                            if(parentDbName.equals("Admins")) {
-                               Toast.makeText(LoginActivity.this, "Login effettuato come admins", Toast.LENGTH_SHORT).show();
+                               Toast.makeText(LoginActivity.this, "Login effettuato come admin", Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
 
-                               varA = 3;
+                               varA = 3; //cambia fragment come logged-admin
                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //permette all'app tornando indietro di non sloggare
@@ -183,7 +183,7 @@ public class LoginActivity extends AppCompatActivity {
                                loadingBar.dismiss();
                                Prevalent.currentOnlineUser = usersData;
 
-                               varA = 2;
+                               varA = 2; //cambia fragment come logged-user
                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //permette all'app tornando indietro di non sloggare
@@ -191,9 +191,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                startActivity(intent);
                                finish();
-
                            }
-
                         } else {
                             loadingBar.dismiss();
                             Toast.makeText(LoginActivity.this, "Password non corretta", Toast.LENGTH_SHORT).show();
@@ -214,39 +212,30 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public static String hashCodeGenMD5(String password) {
-
         String md5 = null;
         if(null == password ) return null;
-
         try {
             //Create MessageDigest object for MD5
             MessageDigest digest = MessageDigest.getInstance("MD5"); //"MD5" per hash piu corto o "SHA-256" per hash più lungo
-
             //Update input string in message digest
             digest.update(password.getBytes(), 0, password.length());
-
             //Converts message digest value in base 16 (hex)
             md5 = new BigInteger(1, digest.digest()).toString(16);
 
         } catch (NoSuchAlgorithmException e) {
-
             e.printStackTrace();
-
         }
-
         return md5;
     }
 
 
     public void backBtn() {
-
         imageBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
             LoginActivity.super.onBackPressed();
             }
         });
-
     }
 
 

@@ -25,11 +25,7 @@ public class ProductsListActivity extends RecyclerView.ViewHolder implements Vie
         txtProductDescription = itemView.findViewById(R.id.product_description);
         txtProductPrice = itemView.findViewById(R.id.product_price);
         imgProduct = itemView.findViewById(R.id.product_imageView);
-
-
-
     }
-
 
 
     public void setItemClickListener(ItemClickListener listener) {

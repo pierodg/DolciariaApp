@@ -15,7 +15,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
     private CardView cardBiscotti, cardPasqua, cardCarnevale, cardPupidizucchero, cardCialde, cardPasticceria;
     private ImageView imageBackButton;
 
-
+//ACTIVITY PERMETTE ALL'ADMIN DI SCEGLIERE UNA CATEGORIA PER AGGIUNGERE UN NUOVO PRODOTTO
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -32,7 +32,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-
+//L'ADMIN VISUALIZZA GLI ORDINI RICEVUTI DAGLI USERS
 
 public class AdminNewOrdersActivity extends AppCompatActivity {
 

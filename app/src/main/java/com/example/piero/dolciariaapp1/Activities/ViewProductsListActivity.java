@@ -48,8 +48,6 @@ public class ViewProductsListActivity extends AppCompatActivity {
         categoryName = getIntent().getExtras().get("Category").toString();
 
         productsRef = FirebaseDatabase.getInstance().getReference().child("Products").child("Category").child(categoryName);
-        
-
 
         imageBackButton = findViewById(R.id.back_input_arrow);
 
@@ -65,9 +63,7 @@ public class ViewProductsListActivity extends AppCompatActivity {
 
         Paper.init(this);
 
-
         backBtn();
-
 
 
         FirebaseRecyclerOptions<Products> options =
@@ -104,9 +100,6 @@ public class ViewProductsListActivity extends AppCompatActivity {
                                         Picasso.get().load(model.getImage()).resize(1000, 950).into(dialog_image);
                                         myDialog.show();
 
-
-
-
                                     } else {
 
                                     Intent intent = new Intent(ViewProductsListActivity.this, ProductDetailsActivity.class);
@@ -131,21 +124,14 @@ public class ViewProductsListActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         adapter.startListening();
 
-
     }
-
     public void backBtn() {
-
         imageBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ViewProductsListActivity.super.onBackPressed();
-
                 varB = 0;
-
             }
         });
-
     }
-
 }

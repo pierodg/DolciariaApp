@@ -30,6 +30,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+//CARRELLO USER
+
 public class CartActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -40,8 +42,6 @@ public class CartActivity extends AppCompatActivity {
     private DatabaseReference productsRef;
 
     private double overTotalPrice = 0;
-
-
 
 
 
